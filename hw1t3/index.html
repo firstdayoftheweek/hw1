@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        form div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <form action="POST">
+            <div>
+                <label for="name">Имя:</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="lastname">Фамилия:</label>
+                <input type="text" id="lastname">
+            </div>
+            <div>
+                <label for="surname">Отчество:</label>
+                <input type="text" id="surname">
+            </div>
+            <div>
+                <label for="city">Родной город:</label>
+                <select name="city" id="city">
+                    <option value="Алматы">Алматы</option>
+                    <option value="Астана">Астана</option>
+                </select>
+            </div>
+            <div>
+                <span>Пол:</span>
+                <p>
+                    <input type="checkbox" name="male" id="male">
+                    <label for="male">Муж</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="female" id="female">
+                    <label for="female">Жен</label>
+                </p>
+            </div>
+            <div>
+                <label for="born">Дата рождение:</label>
+                <input type="datetime-local" name="" id="">
+            </div>
+            <div>
+                <label for="education">Образование:</label>
+                <select name="education" id="education">
+                    <option value="РФМШ г.Алматы">РФМШ г.Алматы</option>
+                    <option value="Шарага">Шарага</option>
+                    <option value="Высшая Шарага">Высшая Шарага</option>
+                    <option value="Норм уник">Норм уник</option>
+                </select>
+            </div>
+            <div>
+                <label for="ent">Баллы ЕНТ:</label>
+                <input type="number" name="ent" id="ent" value="0">
+            </div>
+            <input type="submit" value="Зарегать">
+        </form>
+    </div>
+</body>
+</html>
