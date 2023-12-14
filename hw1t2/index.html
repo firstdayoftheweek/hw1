@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        form div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <form action="POST">
+            <div class="bun_type">
+                <label for="btype">Тип булочки:</label>
+                <select name="btype" id="btype">
+                    <option value="Булочки для гамбургеров">Булочки для гамбургеров</option>
+                    <option value="Булочки не для гамбургеров">Булочки не для гамбургеров</option>
+                    <option value="Просто булочки, но вкусные очень">Просто булочки, но вкусные очень</option>
+                </select>
+            </div>
+            <div class="meat_type">
+                <label for="mtype">Тип мясо:</label>
+                <select name="mtype" id="mtype">
+                    <option value="Говядина">Говядина</option>
+                    <option value="Мясо">Мясо</option>
+                    <option value="Мясо из говядины">Мясо из говядины</option>
+                </select>
+            </div>
+            <div class="extra">
+                <span>Опции:</span>
+                <p>
+                    <input type="checkbox" name="помидор" id="tomato">
+                    <label for="tomato">помидор</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="соленые огурцы" id="pickle">
+                    <label for="pickle">соленые огурцы</label>
+                </p>
+            </div>
+            <div>
+                <label for="address">Адрес:</label>
+                <input type="text" placeholder="Введите адрес" id="address">
+            </div>
+            <div>
+                <label for="fullname">Ф.И.О. Заказчика:</label>
+                <input type="text" placeholder="Введите Ф.И.О." id="fullname">
+            </div>
+            <div>
+                <label for="time">Желаемое время доставки:</label>
+                <input type="time" name="time" id="time">
+            </div>
+            <div>
+                <label for="burger">Выбор бургера:</label>
+                <select name="burger" id="burger">
+                    <option value="Гамбургер">Гамбургер</option>
+                    <option value="Чизбургер">Чизбургер</option>
+                    <option value="Мясо">Мясо</option>
+                </select>
+            </div>
+            <input type="submit" value="Заказать">
+        </form>
+    </div>
+</body>
+
+</html>
